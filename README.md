@@ -15,7 +15,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Buttons or links to a related resource are on each card component
+- [x] Buttons or links to a related resource are on each card component
 - [x] The site is responsive for both desktop and mobile formats
 
 The following **additional** features are implemented:
