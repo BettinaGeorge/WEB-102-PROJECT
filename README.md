@@ -26,11 +26,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with the actual GIF URL after recording! -->
+https://github.com/user-attachments/assets/d6410171-ac1a-4b0a-af2e-b931c10ae7cc
 
-GIF created with [Kap](https://getkap.co/) / [ScreenToGif](https://www.screentogif.com/) / [peek](https://github.com/phw/peek).
+
+
+GIF created with ipad screen recorder
 
 ## Notes
 
