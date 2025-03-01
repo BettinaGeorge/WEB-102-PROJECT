@@ -4,7 +4,7 @@ Submitted by: **Bettina George**
 
 This web app: **Displays a list of upcoming tech and career events relevant to students.**
 
-Time spent: **1 hour spent in total**
+Time spent: **5 hours spent in total**
 
 ## Required Features
 
