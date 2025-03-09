@@ -4,7 +4,7 @@ Submitted by: **Bettina George**
 
 This web app: **Displays a list of upcoming tech and career events relevant to students.**
 
-Time spent: **1 hour spent in total**
+Time spent: **5 hours spent in total**
 
 ## Required Features
 
@@ -15,7 +15,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Buttons or links to a related resource are on each card component
+- [x] Buttons or links to a related resource are on each card component
 - [x] The site is responsive for both desktop and mobile formats
 
 The following **additional** features are implemented:
@@ -26,11 +26,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with the actual GIF URL after recording! -->
+https://github.com/user-attachments/assets/d6410171-ac1a-4b0a-af2e-b931c10ae7cc
 
-GIF created with [Kap](https://getkap.co/) / [ScreenToGif](https://www.screentogif.com/) / [peek](https://github.com/phw/peek).
+
+
+GIF created with ipad screen recorder
 
 ## Notes
 
@@ -38,7 +39,7 @@ Had limited time to complete the project but managed to implement the required f
 
 ## License
 
-    Copyright 2025 Yaw Dankwa
+    Copyright 2025 Bettina GEORGE
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
