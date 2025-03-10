@@ -10,9 +10,13 @@ A simple Flashcards app built with React, where users can flip through cards, st
 - [x] Click "Next" to get a random card
 
 ## 🎥 Walkthrough GIF
-![Flashcards App Demo](your-gif-file.gif)
+![Flashcards App Demo](https://imgur.com/a/lAJKmcG)
 
-## 🛠 Installation
+## 
+
+https://github.com/user-attachments/assets/ad9ba2be-ecf2-4650-b386-1a8ce647e14a
+
+🛠 Installation
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/flashcards-app.git
