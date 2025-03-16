@@ -1,15 +1,13 @@
 import React from "react";
 import FlashcardList from "./components/FlashcardList";
-import "./styles.css";
+import "./styles.css"; // Ensure styles are applied
 
-const App = () => {
+function App() {
   return (
-    <div className="app">
-      <h1>Flashcards App</h1>
-      <p>Click a card to flip it. Click "Next" to get a new card!</p>
+    <div className="app-container">
       <FlashcardList />
     </div>
   );
-};
+}
 
 export default App;

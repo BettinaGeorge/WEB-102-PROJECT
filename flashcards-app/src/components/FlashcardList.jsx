@@ -1,53 +1,73 @@
 import React, { useState } from "react";
 import Flashcard from "./Flashcard";
+import "../styles.css";
 
-const flashcardSet = {  // ✅ Use an object, NOT an array
-  title: "Plant Trivia",
-  description: "Test your knowledge about plants!",
-  cards: [  // ✅ The list of cards is an array INSIDE this object
-    {
-      question: "What is photosynthesis?",
-      answer: "Plants make food using sunlight.",
-      img: "https://source.unsplash.com/350x200/?plants"
-    },
-    {
-      question: "How often should you water a cactus?",
-      answer: "Once every 2-3 weeks.",
-      img: "https://source.unsplash.com/350x200/?cactus"
-    },
-    {
-      question: "What light condition does a snake plant need?",
-      answer: "Low to medium indirect light.",
-      img: "https://source.unsplash.com/350x200/?indoorplant"
-    }
-  ]
-};
+const flashcardsData = [
+  {
+    question: "Capital of France?",
+    answer: "Paris",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg"
+  },
+  {
+    question: "Capital of Japan?",
+    answer: "Tokyo",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/11/Tokyo_Tower_and_city_view.jpg"
+  },
+  {
+    question: "Capital of Canada?",
+    answer: "Ottawa",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/37/Ottawa_Skyline.jpg"
+  }
+];
 
-const FlashcardList = () => {
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [flipped, setFlipped] = useState(false);
+export default function FlashcardList() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [shuffledCards, setShuffledCards] = useState(flashcardsData);
+  const [score, setScore] = useState(0);
+  const [longestStreak, setLongestStreak] = useState(0);
+  const [currentStreak, setCurrentStreak] = useState(0);
 
   const nextCard = () => {
-    setFlipped(false);
-    setCurrentCardIndex((prev) => (prev + 1) % flashcardSet.cards.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % shuffledCards.length);
+  };
+
+  const prevCard = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? shuffledCards.length - 1 : prevIndex - 1
+    );
+  };
+
+  const shuffleCards = () => {
+    const shuffled = [...flashcardsData].sort(() => Math.random() - 0.5);
+    setShuffledCards(shuffled);
+    setCurrentIndex(0);
+  };
+
+  const handleCorrectAnswer = () => {
+    setScore(score + 1);
+    setCurrentStreak(currentStreak + 1);
+    if (currentStreak + 1 > longestStreak) {
+      setLongestStreak(currentStreak + 1);
+    }
   };
 
   return (
-    <div className="flashcard-list">
-      {/* ✅ Title and Description */}
-      <h2>{flashcardSet.title}</h2>
-      <p>{flashcardSet.description}</p>
-      <p><strong>Total Cards:</strong> {flashcardSet.cards.length}</p>
-
-      {/* ✅ Flashcard Display */}
-      <Flashcard card={flashcardSet.cards[currentCardIndex]} flipped={flipped} setFlipped={setFlipped} />
-
-      {/* ✅ Navigation Button */}
-      <div className="nav-buttons">
-        <button className="nav-button" onClick={nextCard}>Next ➡</button>
+    <div className="flashcard-app">
+      <h1>The Ultimate Plant Parent!</h1>
+      <p className="subtitle">How good of a plant parent are you? Test all of your planty knowledge here!</p>
+      <p className="card-count">Number of cards: {shuffledCards.length}</p>
+      <Flashcard 
+        question={shuffledCards[currentIndex].question} 
+        answer={shuffledCards[currentIndex].answer} 
+        image={shuffledCards[currentIndex].image} // ✅ Pass image prop
+        onCorrect={handleCorrectAnswer}
+      />
+      <div className="controls">
+        <button onClick={prevCard} className="nav-button">←</button>
+        <button onClick={shuffleCards} className="shuffle-button">Shuffle Cards</button>
+        <button onClick={nextCard} className="nav-button">→</button>
       </div>
+      <p className="score-display">Score: {score} | Longest Streak: {longestStreak}</p>
     </div>
   );
-};
-
-export default FlashcardList;
+}
