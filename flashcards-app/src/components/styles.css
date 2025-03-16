@@ -1,34 +1,57 @@
-.flashcard {
-    width: 350px;
-    height: 300px;
+.flashcard-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+    perspective: 1000px;
   }
   
-  .flashcard-image {
+  .flashcard {
+    width: 320px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard-front,
+  .flashcard-back {
+    position: absolute;
     width: 100%;
-    max-height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  .flashcard-question {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  
-  .flashcard-answer {
+    height: 100%;
+    backface-visibility: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: white;
+  }
+  
+  .flashcard-back {
+    transform: rotateY(180deg);
+    background: #f8f8f8;
+  }
+  
+  input {
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .flip-back {
+    background-color: #ffcc00;
   }
   
