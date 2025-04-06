@@ -52,7 +52,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/5YcXc2A.gif' title='Video Walkthrough' width='100%' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/yB5DAiX' title='Video Walkthrough' width='100%' alt='Video Walkthrough' />
 
 
 GIF created with **Loom and Imgur**
