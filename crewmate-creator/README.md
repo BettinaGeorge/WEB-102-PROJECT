@@ -1,4 +1,4 @@
-# Web Development Project 7 - Crewmate Creator 🚀
+# Web Development Project 7 - Crewmate Creator 
 
 Submitted by: **Bettina George**
 
@@ -8,7 +8,7 @@ Time spent: **20+ hours** spent in total
 
 ---
 
-## ✅ Required Features
+##  Required Features
 
 The following **required** functionality is completed:
 
@@ -36,7 +36,7 @@ The following **required** functionality is completed:
 
 ---
 
-## ✨ Optional Features
+##  Optional Features
 
 The following **optional** features are implemented:
 
@@ -51,7 +51,7 @@ The following **optional** features are implemented:
 
 ---
 
-## 🌟 Additional Features
+##  Additional Features
 
 - [x] Chart.js-powered color distribution pie chart
 - [x] Filtering crewmates by color dropdown
@@ -73,7 +73,7 @@ GIF created with: **ScreenToGif**
 
 ---
 
-## 📝 Notes
+##  Notes
 
 **Challenges:**
 - Setting up Row-Level Security (RLS) correctly in Supabase
@@ -83,7 +83,7 @@ GIF created with: **ScreenToGif**
 
 ---
 
-## 🪪 License
+##  License
 
     Copyright 2025 Bettina George
 
