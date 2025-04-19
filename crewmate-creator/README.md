@@ -4,7 +4,7 @@ Submitted by: **Bettina George**
 
 This web app: **allows users to create, customize, and manage a colorful crew of crewmates inspired by Among Us. Users can assign names, speed values, and colors to each crewmate, view detailed stats, edit or delete members, and monitor team diversity and performance metrics.**
 
-Time spent: **20+ hours** spent in total
+Time spent: **7+ hours** spent in total
 
 ---
 
