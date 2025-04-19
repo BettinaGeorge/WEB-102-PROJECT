@@ -63,9 +63,13 @@ The following **optional** features are implemented:
 
 ## 🎥 Video Walkthrough
 
+https://github.com/user-attachments/assets/d379da84-a276-414e-83ed-4438553492e4
+
+
+
 Here's a walkthrough of the implemented features:
 
-<img src='https://i.imgur.com/YOUR-GIF-LINK.gif' title='Video Walkthrough' width='700' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/a/RfR5W3w' title='Video Walkthrough' width='700' alt='Video Walkthrough' />
 
 <!-- Replace the above line with your actual GIF URL once you upload it to Imgur or another hosting site -->
 
