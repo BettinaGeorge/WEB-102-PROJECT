@@ -1,0 +1,32 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 220px; /* accounts for the sidebar */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #121212;
+  }
+  
+  .home-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .home-page p {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .crew-image {
+    width: 300px;
+    max-width: 80%;
+    border-radius: 12px;
+  }
+  

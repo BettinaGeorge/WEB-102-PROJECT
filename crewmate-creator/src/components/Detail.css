@@ -1,0 +1,28 @@
+.detail-page {
+    padding: 60px;
+    margin-left: 220px;
+    color: white;
+    max-width: 600px;
+  }
+  
+  .detail-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .detail-page p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .edit-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 14px;
+    background-color: #00b68a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
